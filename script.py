@@ -3,27 +3,23 @@ window = tk.Tk()
 frame = tk.Frame()
 greeting = tk.Label(
         master=frame,
+        relief=tk.RAISED,
         text="Hello", #text to display
-        foreground="white", #set text color to white 
-        background="black", #set background color to black
-        width=10, #set width of the area
-        height=10 #set height of the area
+        foreground="black", #set text color to white 
+        background="white", #set background color to black
+        width=5, #set width of the area
+        height=1 #set height of the area
         )
 button = tk.Button(
         master=frame,
+        relief=tk.RAISED,
         text="Click Me",
-        foreground="white",
-        background="blue",
-        width=10,
-        height=5
-        )
-entry = tk.Entry(
-        fg="yellow",
-        bg="blue",
-        width=50
+        foreground="black",
+        background="white",
+        width=9,
+        height=1
         )
 greeting.pack()
 button.pack()
-frame.pack()
-entry.pack()
+frame.pack(side=tk.LEFT)
 window.mainloop()
